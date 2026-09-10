@@ -1,0 +1,128 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Cairo','Tajawal',sans-serif;background:#fdfdfb;color:#1f2937;line-height:1.8;overflow-x:hidden}
+.container{width:92%;max-width:1150px;margin:auto}
+.top-bar{background:#0b3d5f;color:#fff;font-size:13px;padding:7px 0}
+.top-bar-inner{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.top-bar i{color:#f5b301;margin-left:5px}
+#header{background:#fff;box-shadow:0 2px 15px rgba(0,0,0,.08);position:sticky;top:0;z-index:100}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-circle{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#0b3d5f,#0e7a5f);color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:900}
+.logo h2{font-size:19px;color:#0b3d5f}
+.logo p{font-size:12px;color:#777}
+nav{display:flex;gap:18px}
+nav a{text-decoration:none;color:#0b3d5f;font-weight:700;font-size:15px;transition:.3s;position:relative}
+nav a:hover,nav a.active{color:#c89200}
+.menu-btn{display:none;background:none;border:none;font-size:24px;color:#0b3d5f;cursor:pointer}
+.hero{background:linear-gradient(rgba(8,45,70,.92),rgba(10,90,70,.85)),url('images/photo1.jpg') center/cover;min-height:92vh;display:flex;flex-direction:column;justify-content:center;color:#fff;position:relative;padding:60px 0}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+.hero-photos{display:flex;flex-direction:column;gap:12px}
+.hero-main-img{width:100%;height:320px;object-fit:cover;border-radius:18px;border:4px solid #f5b301;box-shadow:0 15px 40px rgba(0,0,0,.35)}
+.hero-ministry-card{background:#fff;color:#0b3d5f;border-radius:16px;padding:12px 16px;display:flex;gap:12px;align-items:center;box-shadow:0 10px 25px rgba(0,0,0,.25)}
+.hero-ministry-card img{width:90px;height:90px;object-fit:contain;background:#fff;border-radius:12px}
+.hero-ministry-card p{font-weight:800;font-size:14px;line-height:1.6}
+.ministry-logo{width:56px;height:56px;object-fit:contain;background:#fff;border-radius:12px;border:1px solid #eee;padding:3px}
+.hero-badge{background:rgba(255,255,255,.15);border:1px solid #f5b301;display:inline-block;padding:6px 18px;border-radius:30px;margin-bottom:15px;font-weight:700}
+.hero h1{font-size:44px;line-height:1.4;margin-bottom:12px}
+.hero h1 span{color:#f5b301}
+.hero-sub{max-width:750px;font-size:18px;opacity:.95;margin-bottom:25px}
+.btn{display:inline-block;padding:12px 28px;border-radius:35px;text-decoration:none;font-weight:800;transition:.3s;border:2px solid transparent}
+.btn-gold{background:#f5b301;color:#0b3d5f}
+.btn-gold:hover{background:#fff;transform:translateY(-2px)}
+.btn-outline{border-color:#fff;color:#fff;margin-right:10px}
+.btn-outline:hover{background:#fff;color:#0b3d5f}
+.hero-btns{margin-bottom:35px}
+.hero-stats{display:flex;gap:15px;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.12);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.25);padding:12px 28px;border-radius:15px;text-align:center}
+.stat h3{font-size:28px;color:#f5b301}
+.section{padding:70px 0}
+.bg-light{background:#f4f7f5}
+.bg-dark{background:#0b2233;color:#fff}
+.section-title{text-align:center;margin-bottom:40px}
+.section-title span{background:#e8f3ee;color:#0e7a5f;padding:4px 18px;border-radius:20px;font-weight:700;font-size:14px}
+.section-title h2{font-size:34px;margin:10px 0;color:#0b3d5f}
+.section-title.light h2{color:#fff}
+.line{width:70px;height:4px;background:#f5b301;margin:8px auto;border-radius:4px}
+.section-sub{color:#666;margin-top:8px}
+.about-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:35px;align-items:center}
+.about-img{position:relative}
+.about-img img{width:100%;border-radius:20px;box-shadow:0 15px 40px rgba(0,0,0,.15)}
+.about-card-float{position:absolute;bottom:-20px;right:-10px;background:#fff;border-radius:15px;padding:12px 18px;display:flex;gap:10px;align-items:center;box-shadow:0 10px 25px rgba(0,0,0,.15);color:#0b3d5f;font-size:14px}
+.about-card-float i{font-size:28px;color:#f5b301}
+.about-text h3{font-size:26px;margin-bottom:12px}
+.about-text h3 span{color:#0e7a5f}
+.about-list{list-style:none;margin:18px 0}
+.about-list li{margin-bottom:10px;background:#fff;padding:10px 15px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.about-list i{color:#0e7a5f;margin-left:8px}
+.tags span{background:#0b3d5f;color:#fff;padding:4px 14px;border-radius:20px;font-size:13px;margin:3px;display:inline-block}
+.school-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.school-grid img{width:100%;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+.school-grid h3{color:#0b3d5f;font-size:24px;margin-bottom:10px}
+.school-features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.school-features div{background:#fff;padding:15px;border-radius:14px;text-align:center;box-shadow:0 3px 12px rgba(0,0,0,.06)}
+.school-features i{font-size:26px;color:#0e7a5f;margin-bottom:6px}
+.timeline{position:relative;padding-right:30px}
+.timeline::before{content:'';position:absolute;right:10px;top:0;bottom:0;width:3px;background:#e0e0e0}
+.t-item{position:relative;margin-bottom:25px}
+.t-icon{position:absolute;right:-30px;top:0;width:44px;height:44px;background:#f5b301;color:#0b3d5f;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:19px;border:3px solid #fff;box-shadow:0 3px 10px rgba(0,0,0,.15)}
+.t-body{background:#fff;padding:20px 25px;border-radius:16px;box-shadow:0 4px 15px rgba(0,0,0,.06);margin-right:30px}
+.t-body h3{color:#0b3d5f}
+.date{color:#0e7a5f;font-weight:700;font-size:13px}
+.certs-block{margin-top:35px;background:#f4f7f5;border-radius:20px;padding:28px 22px}
+.certs-title{color:#0b3d5f;font-size:22px;text-align:center;margin-bottom:6px}
+.certs-title i{color:#c89200;margin-left:8px}
+.certs-sub{text-align:center;color:#666;font-size:14px;margin-bottom:20px}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.cert-card{background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.08);cursor:pointer;transition:.3s;border:1px solid #e8ecef}
+.cert-card:hover{transform:translateY(-4px);box-shadow:0 10px 25px rgba(0,0,0,.14)}
+.cert-card img{width:100%;height:220px;object-fit:cover;background:#fff}
+.cert-cap{padding:10px 14px 14px;text-align:center}
+.cert-cap b{display:block;color:#0b3d5f;font-size:14px;line-height:1.6}
+.cert-cap span{font-size:12px;color:#0e7a5f;font-weight:700}
+.filter-btns{text-align:center;margin-bottom:20px}
+.filter-btns button{border:2px solid #0b3d5f;background:#fff;color:#0b3d5f;padding:7px 22px;border-radius:25px;margin:4px;cursor:pointer;font-family:inherit;font-weight:700;transition:.3s}
+.filter-btns button.active,.filter-btns button:hover{background:#0b3d5f;color:#fff}
+.upload-box{background:#fff;border:2px dashed #0e7a5f;border-radius:16px;padding:18px 20px;display:flex;gap:15px;align-items:center;margin-bottom:25px;flex-wrap:wrap}
+.upload-box>i{font-size:42px;color:#0e7a5f}
+.upload-box b{color:#0b3d5f;font-size:16px}
+.upload-box p{font-size:14px;color:#555;margin-top:4px}
+.upload-actions{display:flex;gap:10px;margin-right:auto;flex-wrap:wrap}
+.upload-actions label{cursor:pointer}
+.btn-outline-dark{border:2px solid #0b3d5f;color:#0b3d5f;background:#fff;padding:10px 22px;border-radius:35px;font-weight:800;cursor:pointer;font-family:inherit}
+.btn-outline-dark:hover{background:#0b3d5f;color:#fff}
+.img-placeholder{background:linear-gradient(135deg,#dce9e2,#f3ecd4)!important;color:#0b3d5f!important;display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;font-weight:800!important;font-size:14px!important;min-height:250px!important;padding:20px!important}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.g-item{position:relative;border-radius:15px;overflow:hidden;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.1);background:#fff}
+.g-item img{width:100%;height:250px;object-fit:cover;transition:.4s}
+.g-item:hover img{transform:scale(1.07)}
+.g-cap{position:absolute;bottom:0;right:0;left:0;background:linear-gradient(transparent,rgba(0,0,0,.8));color:#fff;padding:25px 12px 10px;font-size:14px;font-weight:700}
+.students-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.s-card{background:#fff;border-radius:18px;overflow:hidden;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.08);padding-bottom:20px}
+.s-card img{width:100%;height:260px;object-fit:cover}
+.s-card h3{margin-top:12px;color:#0b3d5f}
+.badge{display:inline-block;background:#e8f3ee;color:#0e7a5f;padding:5px 15px;border-radius:20px;font-size:13px;font-weight:700;margin-top:8px}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:30px;margin-bottom:30px}
+.c-info div{display:flex;gap:12px;background:rgba(255,255,255,.07);padding:15px;border-radius:14px;margin-bottom:12px;align-items:center}
+.c-info i{font-size:26px;color:#f5b301}
+.c-form{display:flex;flex-direction:column;gap:12px}
+.c-form input,.c-form textarea{padding:13px 16px;border-radius:12px;border:none;font-family:inherit;font-size:15px}
+.c-form button{border:none;cursor:pointer;font-family:inherit;font-size:16px}
+footer{text-align:center;border-top:1px solid rgba(255,255,255,.15);padding-top:20px;font-size:14px;opacity:.9}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;flex-direction:column;z-index:1000;padding:20px}
+.lightbox.show{display:flex}
+.lightbox img{max-width:90%;max-height:75vh;border-radius:12px}
+.lightbox p{color:#fff;margin-top:10px;font-weight:700}
+.close{position:absolute;top:20px;left:30px;color:#fff;font-size:40px;cursor:pointer}
+.lb-prev,.lb-next{position:absolute;top:50%;background:#f5b301;border:none;width:45px;height:45px;border-radius:50%;cursor:pointer;font-size:20px}
+.lb-prev{right:20px}.lb-next{left:20px}
+#topBtn{position:fixed;bottom:25px;left:25px;width:48px;height:48px;border-radius:50%;background:#f5b301;border:none;font-size:20px;cursor:pointer;display:none;z-index:99;box-shadow:0 4px 12px rgba(0,0,0,.25)}
+@media(max-width:850px){
+.about-grid,.school-grid,.contact-grid,.students-grid,.hero-grid{grid-template-columns:1fr}
+.hero-main-img{height:230px}
+nav{position:fixed;top:0;left:-100%;width:70%;height:100vh;background:#0b3d5f;flex-direction:column;padding:60px 20px;transition:.3s;z-index:200}
+nav.show{left:0}
+nav a{color:#fff;font-size:18px}
+.menu-btn{display:block}
+.hero h1{font-size:30px}
+.school-features{grid-template-columns:1fr}
+}
