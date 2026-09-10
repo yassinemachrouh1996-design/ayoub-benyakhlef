@@ -55,6 +55,14 @@ nav a:hover,nav a.active{color:#c89200}
 .about-list li{margin-bottom:10px;background:#fff;padding:10px 15px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
 .about-list i{color:#0e7a5f;margin-left:8px}
 .tags span{background:#0b3d5f;color:#fff;padding:4px 14px;border-radius:20px;font-size:13px;margin:3px;display:inline-block}
+.about-certs{margin-top:20px;background:#f4f7f5;border-radius:16px;padding:16px 18px}
+.about-certs h4{color:#0b3d5f;font-size:17px;margin-bottom:12px}
+.about-certs h4 i{color:#c89200;margin-left:6px}
+.about-certs-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.about-cert-card{background:#fff;border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.07);border:1px solid #e8ecef;transition:.3s}
+.about-cert-card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.12)}
+.about-cert-card img{width:100%;height:180px;object-fit:cover}
+.about-cert-card span{display:block;text-align:center;font-size:12px;font-weight:700;color:#0e7a5f;padding:8px 6px}
 .school-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
 .school-grid img{width:100%;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.12)}
 .school-grid h3{color:#0b3d5f;font-size:24px;margin-bottom:10px}

@@ -195,6 +195,13 @@ if(certUpload){
     alert('تزادو '+n+' ديال الشواهد بنجاح!');
   };
 }
+// Lightbox لشواهد قسم من أنا
+document.querySelectorAll('.about-cert-card').forEach(card => {
+  card.onclick = () => {
+    const img = card.querySelector('img');
+    if(img){ lbImg.src = img.src; lbCap.textContent = card.dataset.cap || ''; lightbox.classList.add('show'); }
+  };
+});
 // الضغط على شهادة واحدة لتبديلها (دوبل كليك)
 document.querySelectorAll('.cert-card').forEach((card, i)=>{
   card.ondblclick = (ev)=>{
