@@ -141,32 +141,6 @@ if(uploadInput){
   };
 }
 
-// الضغط على صور الواجهة لتغييرها بصورة واحدة
-[['imgHeroSchool'],['imgHeroMinistry','imgMinistryTop'],['imgMinistryTop','imgHeroMinistry']].forEach(group=>{
-  const main = document.getElementById(group[0]);
-  if(main){
-    main.style.cursor = 'pointer';
-    main.title = 'اضغط لتغيير هذه الصورة';
-    main.onclick = (ev)=>{
-      ev.stopPropagation();
-      const inp = document.createElement('input');
-      inp.type = 'file'; inp.accept = 'image/*';
-      inp.onchange = async ()=>{
-        if(!inp.files.length) return;
-        const url = await resizeImage(inp.files[0], 1000, 0.85);
-        const saved = JSON.parse(localStorage.getItem('teacherPhotos') || '{}');
-        group.forEach(id=>{ const el=document.getElementById(id); if(el){el.onerror=null;el.src=url;} saved[id]=url; });
-        // صورة المدرسة في الواجهة = نفسها في قسم مدرستي والمعرض
-        if(group[0]==='imgHeroSchool'){
-          ['img1','imgSchool'].forEach(id=>{ const el=document.getElementById(id); if(el){el.onerror=null;el.src=url;} saved[id]=url; });
-        }
-        try{ localStorage.setItem('teacherPhotos', JSON.stringify(saved)); }catch(err){}
-      };
-      inp.click();
-    };
-  }
-});
-
 const resetBtn = document.getElementById('resetPhotos');
 if(resetBtn) resetBtn.onclick = ()=>{
   if(confirm('حذف كل الصور المحفوظة؟')){
