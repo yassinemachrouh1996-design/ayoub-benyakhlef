@@ -1,4 +1,9 @@
 // القائمة للهاتف
+document.querySelectorAll('img').forEach(img => {
+  img.removeAttribute('title');
+  img.onclick = null;
+  img.style.cursor = '';
+});
 const menuBtn = document.getElementById('menuBtn');
 const navLinks = document.getElementById('navLinks');
 if(menuBtn) menuBtn.onclick = () => navLinks.classList.toggle('show');
@@ -7,7 +12,8 @@ document.querySelectorAll('#navLinks a').forEach(a => a.onclick = () => navLinks
 // صورة بديلة إذا الملف غير موجود
 function imgFallback(img){
   img.onerror = null;
-  img.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400"><rect width="100%" height="100%" fill="#eef3f0"/><text x="50%" y="45%" font-size="60" text-anchor="middle">📷</text><text x="50%" y="62%" font-size="22" text-anchor="middle" font-family="sans-serif" fill="#0b3d5f">الصورة غير موجودة بعد</text><text x="50%" y="74%" font-size="16" text-anchor="middle" font-family="sans-serif" fill="#666">أضفها بالزر أعلاه</text></svg>`);
+  img.style.cursor = 'default';
+  img.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400"><rect width="100%" height="100%" fill="#eef3f0"/><text x="50%" y="45%" font-size="60" text-anchor="middle">📷</text><text x="50%" y="62%" font-size="22" text-anchor="middle" font-family="sans-serif" fill="#0b3d5f">الصورة غير موجودة بعد</text></svg>`);
 }
 
 // فلترة المعرض
